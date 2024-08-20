@@ -1,0 +1,78 @@
+       /* Main calculator container */
+        .cal {
+            width: 350px;
+            max-width: 100%;
+            min-width: 320px;
+            height: auto;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            background-color: #f3f3f3;
+            border-radius: 10px;
+        }
+
+        /* Display screen */
+        .screen {
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Input display */
+        .screen input {
+            width: 100%;
+            height: 60px;
+            box-sizing: border-box;
+            color: white;
+            text-align: right;
+            font-size: 2rem;
+            background-color: black;
+            border: none;
+            padding-right: 10px;
+        }
+
+        /* Buttons container */
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        /* Button styles */
+        .buttons button {
+            cursor: pointer;
+            font-size: 1.5rem;
+            padding: 20px;
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.2s;
+        }
+
+        /* Highlighted operator buttons */
+        #c, #subtract, #dash, #multiply, #add, #equal, #divide {
+            background-color: orange;
+            color: white;
+        }
+
+        /* Special styles for larger buttons */
+        #c {
+            grid-column: span 2;
+        }
+
+        #zero {
+            grid-column: span 2;
+        }
+
+        /* Button hover effect */
+        .buttons button:hover {
+            background-color: #ccc;
+        }
+
+        /* Button active effect */
+        .buttons button:active {
+            background-color: #bbb;
+            box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+        }
